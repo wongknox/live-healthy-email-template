@@ -1,0 +1,309 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Instrument Sans", sans-serif;
+  background-color: #f4f5f6;
+}
+
+.body-content {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.hero-section {
+  width: 100%;
+  max-width: 1080px;
+  height: 1000px;
+  background: linear-gradient(
+    to bottom,
+    #091439 0%,
+    #091439 50%,
+    #89ddce 50%,
+    #89ddce 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  margin-bottom: 6rem;
+}
+
+.hero-header-top {
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-header-bottom {
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.tip {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.tip-header {
+  font-style: italic;
+}
+
+.tip-text {
+  flex: 1;
+}
+
+.tip-image {
+  flex-basis: 400px;
+  flex-shrink: 0;
+}
+
+.tip-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.divider-line {
+  max-width: 900px;
+  width: 100%;
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #000000;
+}
+
+.learn-more {
+  margin-top: 6rem;
+}
+
+.learn-more-button {
+  background-color: #091439;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-radius: 999px;
+}
+
+.learn-more-button:hover {
+  cursor: pointer;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1080px;
+  background-color: #091439;
+  margin-top: 4rem;
+  padding: 0 1rem;
+  padding-bottom: 4rem;
+  box-sizing: border-box;
+}
+
+.video-header {
+  text-align: center;
+  color: #ffffff;
+}
+
+.video-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.video-image:hover {
+  cursor: pointer;
+}
+
+.video-text {
+  text-align: center;
+  color: white;
+  padding: 50px 200px;
+}
+
+.watch-now-button {
+  background-color: #89ddce;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-radius: 999px;
+}
+
+.watch-now-button:hover {
+  cursor: pointer;
+}
+
+.footer-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 18px;
+  }
+
+  .body-content {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-section {
+    height: auto;
+    max-width: 768px;
+    padding: 20px;
+  }
+
+  .tip {
+    flex-direction: column;
+    max-width: 768px;
+    gap: 0px;
+  }
+
+  .tip-text {
+    max-width: 500px;
+  }
+
+  .tip-reversed .tip-image {
+    order: 2;
+  }
+
+  .tip-reversed .tip-text {
+    order: 1;
+  }
+
+  .learn-more-button {
+    font-size: 18px;
+  }
+
+  .watch-now {
+    margin-bottom: 40px;
+  }
+
+  .watch-now-button {
+    font-size: 18px;
+  }
+
+  .video-section {
+    max-width: 768px;
+    height: auto;
+  }
+
+  .video-text {
+    padding: 30px 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .hero-section {
+    margin-bottom: 3rem;
+  }
+
+  .body-content {
+    max-width: 600px;
+  }
+
+  .tip {
+    margin-bottom: 1rem;
+  }
+
+  .tip-text {
+    max-width: 350px;
+  }
+
+  .tip-image {
+    width: 100%;
+    max-width: 350px;
+    flex-basis: auto;
+  }
+
+  .learn-more-button {
+    font-size: 14px;
+    margin-top: -1rem;
+  }
+
+  .video-section {
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .video-text {
+    padding: 10px 50px;
+  }
+
+  .watch-now-button {
+    font-size: 14px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .social-icon {
+    max-width: 40px;
+    width: 100%;
+  }
+}
